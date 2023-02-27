@@ -5,11 +5,11 @@
 class Privateer < Formula
   desc ""
   homepage "https://github.com/privateerproj/privateer"
-  version "0.0.0"
+  version "0.0.0-rc"
 
   on_macos do
-    url "https://github.com/privateerproj/privateer/releases/download/v0.0.0/privateer_Darwin_all.tar.gz"
-    sha256 "fa1683e7504ffde12d85364aee1793597e65abebc1b5bf506c057ca1da39a6d1"
+    url "https://github.com/privateerproj/privateer/releases/download/v0.0.0-rc/privateer_Darwin_all.tar.gz"
+    sha256 "5d0b0dbce01cf9f0c0ac58466a2297193436244b182480c60bf35fc8b8608aa6"
 
     def install
       bin.install "privateer"
@@ -18,16 +18,16 @@ class Privateer < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/privateerproj/privateer/releases/download/v0.0.0/privateer_Linux_arm64.tar.gz"
-      sha256 "11b6fbc0a4a2aa4cdbe0b3e1d98851b3adc2f9fae7cb1558fee959f30c0009a9"
+      url "https://github.com/privateerproj/privateer/releases/download/v0.0.0-rc/privateer_Linux_arm64.tar.gz"
+      sha256 "b10edff12c40f0044126a2068d4ca3f635869d5ce27931c26363f0ca4ae0bb6a"
 
       def install
         bin.install "privateer"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/privateerproj/privateer/releases/download/v0.0.0/privateer_Linux_x86_64.tar.gz"
-      sha256 "f832c538909b075485fa405ce2586faa5a31c540374e92c8d5af779ebbaa2704"
+      url "https://github.com/privateerproj/privateer/releases/download/v0.0.0-rc/privateer_Linux_x86_64.tar.gz"
+      sha256 "4f03eff1691edcf030a7f8240305de165f3dfd84d93017059b5cb5c3ab7fbb1c"
 
       def install
         bin.install "privateer"
